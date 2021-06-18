@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <%- include('head') %>
+</head>
+<body>
+    <header>
+        <%- include('header') %>
+    </header>
+
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <br>
+                    <h1 class="text-center">상품등록</h1>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4">
+                    <form method="post" action="" class="form-horizontal">
+                        
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">상품명</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="name" class="form-control" id="inputEmail3" placeholder="상품명을 입력하세요" required>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">상품종류</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <select name="type" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                    <option value="electric">일렉기타</option>
+                                    <option value="bass">베이스기타</option>
+                                    <option value="acoustic">어쿠스틱기타</option>
+                                    <option value="classic">클래식기타</option>
+                                    <option value="sound">앰프/헤드폰</option>
+                                    <option value="effector">이펙터</option>
+                                    <option value="accessory">악세사리</option>
+                                </select>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">상품가격</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-lg">
+                                    <input type="number" name="price" class="form-control" id="inputEmail3" placeholder="상품가격을 입력하세요" required>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">제조사</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="company" class="form-control" id="inputEmail3" placeholder="제조사를 입력하세요" required>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">제조국가</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="country" class="form-control" id="inputEmail3" placeholder="제조국가를 입력하세요" required>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">상세정보</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-lg">
+                                    <textarea name="detail" class="form-control" placeholder="상세정보를 입력하세요" required></textarea>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                            <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">상품 이미지 링크</label>
+                            <br><br>
+                            <div class="col-sm-12">
+                                <div class="input-group input-group-lg">
+                                    <input type="text" name="image" class="form-control" id="inputEmail3" placeholder="상품 이미지 링크를 입력하세요" required>
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+
+                        <div class="form-group">
+                          <div class="col-sm-offset-2 col-sm-10 text-center">
+                            <p> 
+                                <br>
+                                <button type="submit" class="btn btn-primary btn-lg">상품등록</button>
+                            </p>
+                          </div>
+                        </div>
+                      </form>
+                      
+                <div class="col-md-4"></div>
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <%- include('footer') %>
+    </footer>
+</body>
+</html>

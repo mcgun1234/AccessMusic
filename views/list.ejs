@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <%- include('head') %>
+</head>
+<body>
+    <header>
+        <%- include('header') %>
+    </header>
+    <nav>
+        <%- include('nav') %>
+    </nav>
+
+    <article>
+        <div class="container text-center">
+            <div class="row justify-content-lg-center align-items-center">
+                <% prodlist.forEach(function(product) { %>
+                    <div onclick="location.href='detail/<%= product._id %>'" class="col-md-3" >
+                        <label style="cursor:pointer;">
+                        <img class="img-large" src="<%= product.image %>">
+                        <br>
+                        <h4><%= product.name %></h4>
+                        <h4>가격 : <%= product.price.toLocaleString() %>원</h4>
+                        </label>
+                        <br><br>
+                    </div>
+                <% }) %> 
+            </div>
+        </div>
+    </article>
+
+    <footer>
+        <%- include('footer') %>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<br>
+<div class="container text-center">
+    <div class="row justify-content-center align-items-center">
+        <div class="col-lg-4">
+            <% if (is_active === true) { %>
+            <label><h5><%= fullname %>님! 방문을 환영합니다.</h5></label>
+            <% } else {%>
+            <label><h5>방문을 환영합니다.</h5></label>
+            <% } %>
+        </div>
+        <div class="col-lg-4">
+            <label><h5>Romie's Music : Music For Everyone</h5></label>
+        </div>
+        <% if (is_active === true) { %>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-1">
+                <a href="/logout"><label><h5 style="cursor: pointer;">로그아웃</h5></label></a>
+            </div>
+        <% } else {%>
+            <div class="col-lg-1">
+                <a href="/login"><label><h5 style="cursor: pointer;">로그인</h5></label></a>
+            </div>
+            <div class="col-lg-1">
+                <a href="/register"><label><h5 style="cursor: pointer;">회원가입</h5></label></a>
+            </div>
+        <% } %>
+        <div class="col-lg-1">
+            <a href="/qna"><label><h5 style="cursor: pointer;">Q&A</h5></label></a>
+        </div>
+        <div class="col-lg-1">
+            <a href="/admin"><label><h5 style="cursor: pointer;">관리자</h5></label></a>
+        </div>
+    </div>
+</div>
+<hr>
+<div class="container text-center">
+    <div class="row justify-content-lg-center align-items-center">
+        <div class="col-lg-3">
+            <a class="text-dark" href="/"><label><h1 style="cursor: pointer;">Romie's Music</h1></label></a>
+        </div>
+        <div class="col-lg-6">
+            <form action="/search" method="get">
+                <div class="form-group">
+                    <div class="input-group input-group-lg">
+                        <input type="text" id="name" name="name" class="form-control" placeholder="검색할 악기 정보를 입력하세요" aria-label="Product Name" aria-describedby="button-addon2">
+                        <button class="btn btn-outline-dark" type="submit" id="button-addon2">검색</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+        <div class="col">
+            <a href="/cart"><img class="img-small" src="../images/cart.png"></a>
+        </div>
+        <div class="col">
+            <a href="/account"><img class="img-small" src="../images/profile.png"></a>
+        </div>
+    </div>
+</div>
+<hr>

@@ -1,0 +1,19 @@
+body{
+    color: black;    
+}
+a{
+    cursor: pointer;
+    color: black;    
+}
+.img-small{
+    max-width: 50%;
+    max-height: 50%;
+}
+.img-medium{
+    max-width: 75%;
+    max-height: 75%;
+}
+.img-large{
+    max-width: 100%;
+    max-height: 100%;
+}

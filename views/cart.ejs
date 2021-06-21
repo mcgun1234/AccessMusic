@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <%- include('head') %>
+</head>
+<body>
+    <header>
+        <%- include('header') %>
+    </header>
+    <nav>
+        <%- include('nav') %>
+    </nav>
+
+    <article>
+        <div class="container text-center">
+            <div class="row justify-content-lg-center align-items-center">
+                <div class="col-md-2">
+                    <h3>장바구니</h3>
+                </div>
+                <div class="col-md-10"></div>
+            </div>
+            <hr>
+            <div class="row justify-content-lg-center align-items-center">
+                <div class="col-md-2">
+                    <h5>수량</h5>
+                </div>
+                <div class="col-md-4">
+                    <h5>상품명</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>배송수단</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>배송비</h5>
+                </div>
+                <div class="col-md-2">
+                    <h5>가격</h5>
+                </div>
+            </div>
+            <hr>
+            <br><br><br><br><br><br>
+            <div class="row justify-content-lg-center align-items-center">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                    <img class="img-cart" src="../images/cart-main.png">
+                    <br><br>
+                    <h5>장바구니가 비어있습니다.</h5>
+                </div>
+                <div class="col-md-4"></div>
+            </div>
+            <br><br><br><br><br><br>
+            <hr>
+            <br>
+            <button type="button" class="btn btn-outline-primary btn-lg">주문하기</button>
+            <br>
+        </div>
+    </article>
+
+    <footer>
+        <%- include('footer') %>
+    </footer>
+</body>
+</html>

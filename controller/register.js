@@ -34,7 +34,6 @@ let post = function (req, res) {
                             is_active: false
                         });
                     }
-                    console.log(username,password);
                     res.redirect('/login');
                 });
             }

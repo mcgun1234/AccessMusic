@@ -14,11 +14,12 @@
                 </div>
             </form>
         </div>
-        <div class="col"></div>
+        
         <div class="col">
             <a href="/cart"><img class="img-small" src="../images/cart.png"></a>
             <a id="account-btn"><img class="img-small profileimg" src="../images/profile.png"></a>
-            
+            <a href="/contact"><img class="img-small profileimg" src="../images/call.png"></a>
+
             <div id="myModal" class="modal">
                 <div class="modal-content">
                 <div class="container">
@@ -34,11 +35,11 @@
                         <% if (is_active === true) { %>
                             <label><h5><%= fullname %>님! 방문을 환영합니다.</h5></label>
                             <br>
-                            <button type="button" onclick="location.href='logout'" class="btn btn-outline-dark btn-lg">로그아웃</button>
+                            <button type="button" onclick="location.href='/logout'" class="btn btn-outline-dark btn-lg">로그아웃</button>
                         <% } else {%>
-                            <button type="button" onclick="location.href='login'" class="btn btn-outline-primary btn-lg">로그인</button>
+                            <button type="button" onclick="location.href='/login'" class="btn btn-outline-primary btn-lg">로그인</button>
                             <br>
-                            <button type="button" onclick="location.href='register'" class="btn btn-outline-dark btn-lg">회원가입</button>
+                            <button type="button" onclick="location.href='/register'" class="btn btn-outline-dark btn-lg">회원가입</button>
                         <% } %>
                     </div>
                 <br>

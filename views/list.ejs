@@ -15,12 +15,12 @@
         <div class="container text-center">
             <div class="row justify-content-lg-center align-items-center">
                 <% prodlist.forEach(function(product) { %>
-                    <div onclick="location.href='detail/<%= product._id %>'" class="col-md-3" >
+                    <div onclick="location.href='detail/<%= product._id %>'" class="prod-wrapper col-md-3" >
                         <label style="cursor:pointer;">
-                        <img class="img-large" src="<%= product.image %>">
-                        <br>
-                        <h4><%= product.name %></h4>
-                        <h4>가격 : <%= product.price.toLocaleString() %>원</h4>
+                        <img class="img-wrapper img-large" src="<%= product.image %>">
+                        <br><br>
+                        <h6><%= product.name %></h6>
+                        <h6>가격 : <%= product.price.toLocaleString() %>원</h6>
                         </label>
                         <br><br>
                     </div>

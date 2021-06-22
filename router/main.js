@@ -9,6 +9,7 @@ const AdminController = require("../controller/admin");
 const SearchController = require("../controller/search");
 const DetailController = require("../controller/detail");
 const CartController = require("../controller/cart")
+const ContactController = require("../controller/contact")
 
 router.get('/', MainController.get)
 
@@ -36,5 +37,8 @@ router.get('/search', SearchController.get);
 router.get('/detail/:id', DetailController.get);
 
 router.get('/cart', CartController.get);
+
+router.get('/contact', ContactController.get);
+router.post('/contact', ContactController.get);
 
 module.exports = router;

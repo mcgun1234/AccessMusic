@@ -18,13 +18,13 @@
                     <img class="img-large" src="<%= product.image %>">
                 </div>
                 <div class="col-md-6">
-                    <h1>상품명 : <%= product.name %></h1>
+                    <h3>상품명 : <%= product.name %></h3>
                     <br>
-                    <h1>제조사 : <%= product.company %></h1>
+                    <h3>제조사 : <%= product.company %></h3>
                     <br>
-                    <h1>제조국가 : <%= product.country %></h1>
+                    <h3>제조국가 : <%= product.country %></h3>
                     <br>
-                    <h1>가격 : <%= product.price.toLocaleString() %>원</h1>
+                    <h3>가격 : <%= product.price.toLocaleString() %>원</h3>
                     <br>
                     <button style="font-size: 35px;" type="button" class="btn btn-outline-primary btn-lg">주문하기</button>
                     <button style="font-size: 35px;" onclick="alert('상품이 추가되었습니다.');" type="button" class="btn btn-outline-secondary btn-lg">장바구니</button>
@@ -32,8 +32,8 @@
             </div>
             <hr>
             <div class="row justify-content-lg-center align-items-center">
-                <h1>상세정보</h1>
-                <h2><%= product.detail %></h2>
+                <h3>상세정보</h3>
+                <h4><%= product.detail %></h4>
             </div>
         </div>
     </article>

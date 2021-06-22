@@ -22,6 +22,11 @@ let get = function (req, res) {
     });
 }
 
+let post = function (req, res) {
+    res.redirect('/');
+}
+
 module.exports = {
     get: get,
+    post: post
 };

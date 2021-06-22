@@ -35,6 +35,7 @@ router.post('/admin', AdminController.post);
 router.get('/search', SearchController.get);
 
 router.get('/detail/:id', DetailController.get);
+router.post('/detail/:id', DetailController.post);
 
 router.get('/cart', CartController.get);
 

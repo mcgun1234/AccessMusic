@@ -26,7 +26,7 @@
                     <br>
                     <h3>가격 : <%= product.price.toLocaleString() %>원</h3>
                     <br>
-                    <button style="font-size: 35px;" type="button" class="btn btn-outline-primary btn-lg">주문하기</button>
+                    <button style="font-size: 35px;" id="order-btn" type="button" class="btn btn-outline-primary btn-lg">주문하기</button>
                     <button style="font-size: 35px;" onclick="alert('상품이 추가되었습니다.');" type="button" class="btn btn-outline-secondary btn-lg">장바구니</button>
                 </div>
             </div>
@@ -34,6 +34,54 @@
             <div class="row justify-content-lg-center align-items-center">
                 <h3>상세정보</h3>
                 <h4><%= product.detail %></h4>
+            </div>
+        </div>
+        <div id="myOrderModal" class="modal">
+            <div class="modal-content">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-11"></div>
+                    <div class="col-md-1">
+                        <span class="close2">&times;</span>
+                    </div>
+                </div>
+            </div>
+                <div class="d-grid gap-2 col-10 mx-auto">
+                    <% if (is_active === true) { %>
+                        <h1 class="text-center">주문하기</h1>
+                        <form method="post" onsubmit="alert('주문이 완료되었습니다.');" action="" class="form-horizontal">
+                            <div class="form-group">
+                              <label style="font-size: 20px;" for="inputEmail3" class="col-sm-6 control-label">주소</label>
+                              <br><br>
+                                <div class="col-sm-12">
+                                    <div class="input-group input-group-lg">
+                                        <input type="text" name="address" class="form-control" id="inputEmail3" placeholder="주소를 입력하세요" required>
+                                    </div>
+                                </div>
+                              <br>
+                            </div>
+
+                            <div class="form-group">
+                              <div class="text-center">
+                                <p> 
+                                    <br>
+                                    <div class="d-grid gap-2 col-8 mx-auto">
+                                    <button type="submit" class="btn btn-outline-primary btn-lg">주문하기</button>
+                                    </div>
+                                </p>
+                              </div>
+                            </div>
+                          </form>
+                    <% } else {%>
+                        <h3 class="text-center">로그인 후 이용해주세요</h3>
+                        <br>
+                        <button type="button" onclick="location.href='/login'" class="btn btn-outline-primary btn-lg">로그인</button>
+                        <br>
+                        <button type="button" onclick="location.href='/register'" class="btn btn-outline-dark btn-lg">회원가입</button>
+                    <% } %>
+                    
+                </div>
+            <br>
             </div>
         </div>
     </article>
